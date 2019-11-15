@@ -1,5 +1,4 @@
 # js-in-bits
 
-whatever you want in here :) 
+Convert between hexadecimal, binary, decimal easily in javaScript
 
-i like joker !
