@@ -13,7 +13,15 @@
     "hexa",
     "hexadecimal",
     "decimal",
-    "binary"
+    "binary",
+    "javascript-hexadecimal",
+    "javascript-hexa",
+    "javascript-binary",
+    "javascript-decimal",
+    "node-decimal",
+    "node-binary",
+    "node-hexadecimal",
+    "node-hexa"
   ],
   "devDependencies": {},
   "dependencies": {
