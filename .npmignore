@@ -1,0 +1,4 @@
+src/utilities.test.js
+src/binary/binary.test.js
+src/decimal/decimal.test.js
+src/hexa/hexa.test.js
