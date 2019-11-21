@@ -63,11 +63,11 @@ isHexa('0XGT') # returns false
     - hexa(number,type,contain_ox),
     - binary(number,type,separate_with_underScore),
     - decimal(number,type)
-
-#### number: that number you want to convert it (__required__)
-#### type: type of number you want to convert it (__required when a number can be represented in two formats__)
-#### contain_ox : print the return value from hexa() concatenating with 0x (__optional__)
-#### separate_with_underScore : separate the return value from binary() aftey every 4-digits (__optional__)
+    
+**number**: that number you want to convert it (*required*)
+**type**: type of number you want to convert it (*required when a number can be represented in two formats*)
+**contain_ox**: print the return value from hexa() concatenating with 0x (*optional*)
+**separate_with_underScore**: separate the return value from binary() aftey every 4-digits (*optional*)
    
 
 ## Contributing
