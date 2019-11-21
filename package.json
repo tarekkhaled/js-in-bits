@@ -1,6 +1,6 @@
 {
   "name": "js-in-bits",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "js-in-bit make converting from any format (hexa,binary,deciaml) to other is very easily",
   "main": "src/index.js",
   "scripts": {
@@ -27,9 +27,9 @@
     "jest": "^24.9.0"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/tarekkhaled/js-in-bits.git"
-  },  
-  "url" : "https://github.com/tarekkhaled/js-in-bits",
-  "email" : "tarekt820@gmail.com"
+    "type": "git",
+    "url": "https://github.com/tarekkhaled/js-in-bits.git"
+  },
+  "url": "https://github.com/tarekkhaled/js-in-bits",
+  "email": "tarekt820@gmail.com"
 }
