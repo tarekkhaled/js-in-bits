@@ -1,6 +1,6 @@
 {
   "name": "js-in-bits",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "js-in-bit make converting from any format (hexa,binary,deciaml) to other is very easily",
   "main": "src/index.js",
   "scripts": {
