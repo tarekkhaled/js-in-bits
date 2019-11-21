@@ -33,8 +33,8 @@ decimal('11001000','binary') # return '200'
 /* NOTE:: In case you don't determine the type of number(second argument)that you want to convert it 
 in "hexa()" | "binary()" be care that number will be treated as "decimal"  */
 
-/* NOTE:: In case you don't determine the type of number(second argument)that you want to convert it in "decimal()" 
-be care that number will be treated as "binary"  */
+/* NOTE:: In case you don't determine the type of number(second argument)that you want to convert it 
+in "decimal()" be care that number will be treated as "binary"  */
 
 hexa(10101010) # returns '9A2112'
 decimal('100') # returns 4 
@@ -59,15 +59,15 @@ isHexa('0XGT') # returns false
 ```
 
 ## Arguments 
-Functions 
+### Functions 
     - hexa(number,type,contain_ox),
     - binary(number,type,separate_with_underScore),
     - decimal(number,type)
 
-// number: that number you want to convert it (required)
-// type: type of number you want to convert it (required when a number can be represented in two formats)
-// contain_ox : print the return value from hexa() concatenating with 0x (optional)
-// separate_with_underScore : separate the return value from binary() after every 4 digits (will be useful when binary is bigger number) (optional)
+#### number: that number you want to convert it (__required__)
+#### type: type of number you want to convert it (__required when a number can be represented in two formats__)
+#### contain_ox : print the return value from hexa() concatenating with 0x (__optional__)
+#### separate_with_underScore : separate the return value from binary() aftey every 4-digits (__optional__)
    
 
 ## Contributing
