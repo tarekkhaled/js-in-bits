@@ -30,9 +30,11 @@ binary('200','decimal') # returns '11001000'
 decimal('6F','hexa') # returns '111'
 decimal('11001000','binary') # return '200'
 
-/* NOTE:: In case you don't determine the type of number(second argument)that you want to convert it in "hexa()" | "binary()" be care that number will be treated as "decimal"  */
+/* NOTE:: In case you don't determine the type of number(second argument)that you want to convert it in "hexa()" | "binary()" 
+be care that number will be treated as "decimal"  */
 
-/* NOTE:: In case you don't determine the type of number(second argument)that you want to convert it in "decimal()" be care that number will be treated as "binary"  */
+/* NOTE:: In case you don't determine the type of number(second argument)that you want to convert it in "decimal()" 
+be care that number will be treated as "binary"  */
 
 hexa(10101010) # returns '9A2112'
 decimal('100') # returns 4 
