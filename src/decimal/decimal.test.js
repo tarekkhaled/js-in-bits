@@ -81,7 +81,7 @@ test("should return [0-9] == Decimal",()=>{
 
 //** Just We want to Testing the flow of the decimal function binary -> hexa */
 test("decimal must treat it as binary",()=>{
-    const testingOu = decimal('0100');
+    const testingOu = decimal('0100','binary');
     expect(testingOu).toBe(4)
 })
 

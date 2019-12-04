@@ -17,7 +17,6 @@ const hexaTable = {
     'F': '1111',
 };
 
-
 const hexaSmallTable = {
     10 : 'A',
     11 : 'B',

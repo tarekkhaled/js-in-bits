@@ -1,4 +1,3 @@
-const {isHexa} = require('../hexa');
 const {hexa2binary,decimal2binary} = require("../utilities");
 
 
@@ -11,7 +10,6 @@ const binary = (number,type,separate_with_underScore) => {
     let numberAsString = number;
     if(typeof number !== 'string') {
         numberAsString = String(number)
-
     }
     if(type){
         switch (type) {
@@ -26,41 +24,30 @@ const binary = (number,type,separate_with_underScore) => {
         }
     } 
     else {
-
         if(Number(numberAsString)) {
             binaryToReturn = decimal2binary(numberAsString,separate_with_underScore);
          } 
-     
-         else {
+        else {
            binaryToReturn = hexa2binary(numberAsString,separate_with_underScore)
-         }  
-
+        }  
     }
-
     return binaryToReturn;
-   
 }
 
 
 const isBinary = (number) => {
+    const regex = /^[01]+$/g;
     if(!number) {
         throw new Error('you didn\'t pass argument to the function !')
     }
     let numberAsString = number;
-    const numbers = '23456789ABCDEF'
     if(typeof number !== 'string') {
         numberAsString = String(number)
     }
-    for (let i = 0 ; i < numbers.length ; i++) {
-        if(numberAsString.includes(numbers[i])){
-            return false;
-        }
+    if(regex.test(numberAsString)){
+            return true;
     }
-    if(numberAsString.toLowerCase().includes('0x')) {
-        return false;
-    }
-    return true;
-    
+    return false;   
 }
 
 

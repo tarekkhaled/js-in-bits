@@ -39,7 +39,7 @@ const hexa = (number,type,show_it_with_0X) => {
 }
 
 const isHexa = (number) => {
-    let noError_flag = false;
+    const regex = /\b(0[x,X])?[a-fA-F0-9]+\b/;
     if(!number) {
         throw new Error('you didn\'t pass argument to the function !')
     }
@@ -47,26 +47,8 @@ const isHexa = (number) => {
     if(typeof number !== 'string') {
         numberAsString = String(number)
     }
-    if(numberAsString[0] === '0' && numberAsString[1].toLowerCase() === 'x') {
-        numberAsString = numberAsString.substring(2);
-    }
-   
-    if(Number(numberAsString)) {
-        return true;
-    }
-    for (let i = 0 ; i < numberAsString.length ; i++) {
-        if(numberAsString[i].includes('A') || numberAsString[i].includes('B') || 
-          numberAsString[i].includes('C')  || numberAsString[i].includes('D') || 
-          numberAsString[i].includes('E')  || numberAsString[i].includes("F") || Number(numberAsString[i])){
-            noError_flag = true 
-        } else {
-            noError_flag = false;
-            break;
-        }
-    }
-    if(noError_flag) {
-        return true;
-    }
+    if(regex.test(numberAsString))
+        return true
     return false;
 }
 
