@@ -1,6 +1,7 @@
 const {isBinary,binary} = require("./binary");
 const {isHexa,hexa} = require("./hexa");
 const {isDecimal,decimal} = require("./decimal");
+const octal = require("./octal");
 
 
 
@@ -10,6 +11,7 @@ module.exports = {
     isHexa,
     hexa,
     isDecimal,
-    decimal
+    decimal,
+    octal
 }
 
