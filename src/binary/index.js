@@ -19,6 +19,9 @@ const binary = (number,type,separate_with_underScore) => {
             case 'hexa' :
                 binaryToReturn = hexa2binary(numberAsString,separate_with_underScore)
                 break;       
+            case 'octal' :
+                binaryToReturn = decimal2binary(parseInt(Number(number),8));
+                break; 
             default:
                 break;
         }

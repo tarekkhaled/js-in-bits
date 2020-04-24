@@ -25,12 +25,16 @@ const decimal = (number,type) => {
     }
     if(type){
         switch (type) {
-            case 'hexa':
+            case 'hexa' || 'hexadecimal':
                 decimalToReturn = parseInt(numberAsString,16)
                 break;
             case 'binary':
                 decimalToReturn = parseInt(numberAsString,2)
-                break;       
+                break;
+            case 'octal':
+                decimalToReturn = parseInt(numberAsString,8)
+                break;     
+
             default:
                 break;
         }

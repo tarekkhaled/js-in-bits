@@ -5,7 +5,10 @@
   "main": "src/index.js",
   "scripts": {
     "test": "jest --watchAll",
-    "validate": "npm-run-all --parallel test"
+    "test_hexa": "jest hexa.test.js",
+    "test_binary": "jest binary.test.js",
+    "test_deciaml": "jest decimal.test.js",
+    "test_octal": "jest octal.test.js"
   },
   "author": "tarek khaled",
   "license": "MIT",
@@ -31,5 +34,6 @@
     "url": "https://github.com/tarekkhaled/js-in-bits.git"
   },
   "url": "https://github.com/tarekkhaled/js-in-bits",
-  "email": "tarekt820@gmail.com"
+  "email": "tarekt820@gmail.com",
+  "dependencies": {}
 }

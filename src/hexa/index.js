@@ -20,6 +20,9 @@ const hexa = (number,type,show_it_with_0X) => {
                 break;
             case 'binary':
                 hexaToReturn = bin2hexa(numberAsString);
+                break; 
+            case 'octal':
+                hexaToReturn = decimalToHexa(parseInt(Number(number),8));
                 break;       
             default:
                 break;

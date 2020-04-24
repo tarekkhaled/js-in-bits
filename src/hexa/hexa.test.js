@@ -1,4 +1,4 @@
-const {hexa,isHexa} = require("../hexa");
+const {hexa,isHexa} = require(".");
 // unit testing for is hexa function 
 
 test("isHexa function",()=>{
@@ -46,59 +46,62 @@ test("isHexa function",()=>{
 
 // integartion testing for hexa function 
 
-test("should return 0x[0-9][ABCDEFG] | [0-9][ABCDEFG] == Hexa",()=>{
+test("hexa FN :: convert to hexa",()=>{
     const testingOu = hexa(56)
     expect(testingOu).toBe('38')
 })
 
-test("should return 0x[0-9][ABCDEFG] | [0-9][ABCDEFG] == Hexa",()=>{
+test("hexa FN :: convert to hexa",()=>{
     const testingOu = hexa(273)
     expect(testingOu).toBe('111')
 })
 
 
-test("should return 0x[0-9][ABCDEFG] | [0-9][ABCDEFG] == Hexa",()=>{
+test("hexa FN :: convert to hexa",()=>{
     const testingOu = hexa(105)
     expect(testingOu).toBe('69')
 })
 
-test("should return 0x[0-9][ABCDEFG] | [0-9][ABCDEFG] == Hexa",()=>{
+test("hexa FN :: convert to hexa",()=>{
     const testingOu = hexa(158)
     expect(testingOu).toBe('9E')
 })
 
-test("should return 0x[0-9][ABCDEFG] | [0-9][ABCDEFG] == Hexa",()=>{
+test("hexa FN :: convert to hexa",()=>{
     const testingOu = hexa(171)
     expect(testingOu).toBe('AB')
 })
 
 
-test("should return 0x[0-9][ABCDEFG] | [0-9][ABCDEFG] == Hexa",()=>{
+test("hexa FN :: convert to hexa",()=>{
     const testingOu = hexa(100,'decimal')
     expect(testingOu).toBe('64')
 })
 
 
-test("should return 0x[0-9][ABCDEFG] | [0-9][ABCDEFG] == Hexa",()=>{
+test("hexa FN :: convert to hexa",()=>{
     const testingOu = hexa(262143)
     expect(testingOu).toBe('3FFFF')
 })
 
 
-test("should return 0x[0-9][ABCDEFG] | [0-9][ABCDEFG] == Hexa",()=>{
+test("hexa FN :: convert to hexa",()=>{
     const testingOu = hexa(1000,'decimal',true)
     expect(testingOu).toBe('0x3E8')
 })
 
 
 
-
-
-
-test("should return 0x[0-9][ABCDEFG] | [0-9][ABCDEFG] == Hexa",()=>{
+test("hexa FN :: convert to hexa",()=>{
     const testingOu = hexa(123213123)
     expect(testingOu).toBe('7581543')
 })
+
+test("hexa FN :: convert to hexa",()=>{
+    const testingOu = hexa(100,'octal')
+    expect(testingOu).toBe('40')
+})
+
 
 
 
